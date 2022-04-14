@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  text-align: center; /* will center all inline-block which has no width set*/
+  font-family: 'Merriweather', serif; /*if "Merriweather" not supported wil try later ones*/
+  font-size: 160%;
+  color:#40514E;
+}
+
+h1 {
+  color: #66BFBF;
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  /*wont be afftected by parent font size setting*/
+  /*
+  percentage or em will be dynamically scaled if user change size in web browser
+  1 em = 100% = 16px, if we want 90px, we need 90/16 * 100% = 562.5%
+
+  em will be effected by parent property, so using rem will not affected by parent setting
+  */
+  /*width:20%;
+  margin: 0 auto 0 auto; /*use maegin auto to set center if set the width*/
+  line-height: 2;
+}
+
+h2 {
+  color: #66BFBF;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+  /*
+  1rem = 16 px, 40px = 2.5rem
+  */
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 5% auto 5% auto;
+}
+
+a {
+  color: #11999E;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  margin:10px 20px;
+  text-decoration: none;
+}
+
+a:hover{
+  color:#EAF6F6;
+}
+
+hr{
+  border: dotted #EAF6F6 6px;
+  border-bottom: 0;
+  width:4%; /* 4% of the width*/
+  margin: 100px auto;
+}
+
+p{
+  line-height:2;
+}
+
+.introduction{
+  width:40%;
+  margin:auto;
+}
+.contact-message{
+  width:60%;
+  margin:40px auto 60px;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999E);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999E);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999E);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999E);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999E);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 15px 20px 15px 20px;
+  text-decoration: none;
+  /* inline-block allow button to be adjusted as needed.
+   A div is by default a block level element and as such takes up the full available width.*/
+  display:inline-block;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.top-container {
+  background-color: #EAF6F6;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {
+  position:relative;
+  margin: 100px 0;
+}
+
+.bottom-container {
+  position:relative;
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
+
+.des {
+  text-decoration: underline;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.bot-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 6.25rem auto 6.25rem auto;
+  text-align: left;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  margin-top:5%;
+}
+
+.webDesign-img {
+  float: left;
+  width: 35%;
+  margin-right: 30px;
+}
+
+.iosDesign-img {
+  float: right; /*only use for specific purpose instead of postioning*/
+  width: 35%;
+  margin-left: 30px;
+  position:relative;
+}
+
+.footer-copyright{
+  font-size: 0.75rem;
+  color: #EAF6F6;
+  padding: 20px 0;
+}
+
+/* cancel float wrapping
+.web-skill-description{
+  clear:left;
+}
+
+.ios-skill-description{
+  clear:right;
+}
+*/
